@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test countdown</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&family=Pangolin&family=Playwrite+DK+Loopet:wght@100..400&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="flip-clock-container">            
+            <p class="countdown-text"></p>
+            <div class="flip-clock flip-clock-d">
+                <div class="digit digit-left">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+                <div class="digit digit-middle">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+                <div class="digit digit-right">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+            </div>
+            
+            <div class="colon">:</div>
+
+            <div class="flip-clock flip-clock-h">
+                <div class="digit digit-left">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+                <div class="digit digit-right">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="flip-clock flip-clock-m">
+                <div class="digit digit-left">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+                <div class="digit digit-right">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="flip-clock flip-clock-s">
+                <div class="digit digit-left">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+                <div class="digit digit-right">
+                    <!-- ::before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front"></div>
+                        <div class="card-face card-face-back"></div>
+                    </div>
+                    <!-- ::after  -->
+                </div>
+            </div>
+        </div>
+        <button id="activateBook" style="display: none;">CLICK ME🎇</button>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        <div class="book">
+            <div class="cover">
+                <label for="checkbox-cover"></label>
+            </div>
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <p class="heading">Chúc mừng sinh nhật, Nhin Nhin!</p>
+                    <p class="body">Eto, chúc em một sinh nhật thật vui nha. Chúc em một năm tiếp đến luôn khỏe mạnh, vui vẻ, xinh đẹp, kiếm thật nhiều tiền nhưng không bị hóa nole đồng tiền nha. </p>
+                    <div class="imgp">
+                        <img src="./img/img1.jpg">
+                    </div>
+                    <label for="checkbox-page1" class="next">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+                <div class="back-page">
+                    <img src="./img/img.jpg">
+                    <label for="checkbox-page1" class="prev">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <p class="heading">Góc "bóc phốt" nha!</p>
+                    <p class="body">Đừng có vì lo kiếm tiền, lo deadline này nọ mà bỏ ăn nha. 😠</p>
+                    <p class="body">Cũng đừng vì vậy mà thức khuya, dậy sớm, ngủ ít, ... Để rồi sức khỏe yếu đi, dễ bệnh. 😡 </p>
+                    <p class="body">Mà cũng đừng bi quan quá nha em, hãy luôn cố gắng vì mọi thứ phía trước nha.</p>
+                    <div class="imgin">
+                        <img src="./img/img3.jpg">
+                    </div>
+                    <label for="checkbox-page2" class="next">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+                <div class="back-page">
+                    <img src="./img/img.jpg">
+                    <label for="checkbox-page2" class="prev">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <p class="body">Ờm, cũng xin lỗi em vì có vẻ mấy câu anh hỏi làm em hiểu nhầm món quá nhé!</p>
+                    <p class="body">Nhưng bất ngờ khum, bất ngờ lắm chứ gì, hehe! Nói chứ cũng xin lỗi vì anh làm cái này cũng hơi sơ sài, nhiều chỗ vẫn còn chưa chỉnh chu lắm ＞︿＜</p>
+                    <p class="body">Để hối lỗi, chờ anh ra Hà Nội anh dẫn em đi ăn nha ( ´･･)ﾉ(._.`) hehe...</p>
+                    <p class="body">Chung quy lại thì...</p>
+                    <p class="heading">HAPPY BIRTHDAY, NHIÊN!!!</p>
+                    <label for="checkbox-page3" class="next"></label>
+                </div>
+                <div class="back-page"></label>
+                </div>
+            </div>
+            <div class="back-cover">
+            </div>
+        </div>
+    </div>
+    <script src="event_cd.js"></script>
+</body>
+</html>
