@@ -280,7 +280,7 @@ input{
 
 .cover, .back-cover {
 	background-color: transparent;
-  	background-image: url('/img/book-cover.jpg');
+  	background-image: url('./img/book-cover.jpg');
   	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
