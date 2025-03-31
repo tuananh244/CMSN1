@@ -63,7 +63,7 @@
 
     (function runCountdown() {
         // Chỉnh sửa thời gian countdown theo yêu cầu
-        const countdownTarget = new Date(Date.UTC(2025, 2, 31, 9, 50, 0)).getTime();
+        const countdownTarget = new Date(Date.UTC(2025, 3, 1, 16, 59, 59)).getTime();
 
         function updateCountdown() {
             const now = new Date();
